@@ -9,6 +9,14 @@ export async function queryActivities() {
   return request('/api/activities');
 }
 
+export async function queryHello() {
+  return request(`/serverTest/yeye/hello`);
+}
+
+export async function queryHelloParams(params) {
+  return request(`/serverTest/yeye/helloParams?${stringify(params)}`);
+}
+
 export async function queryRule(params) {
   return request(`/api/rule?${stringify(params)}`);
 }

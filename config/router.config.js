@@ -31,6 +31,11 @@ export default [
         icon: 'dashboard',
         routes: [
           {
+            path: '/dashboard/yeyetest',
+            name: 'yeyetest',
+            component: './Dashboard/YeyeTest',
+          },
+          {
             path: '/dashboard/analysis',
             name: 'analysis',
             component: './Dashboard/Analysis',
